@@ -1,0 +1,29 @@
+{
+  "name": "novikovdvpoit/category_extend",
+  "description": "This is the category attach module for the OXID eShop.",
+  "type": "oxideshop-module",
+  "keywords": ["oxid", "modules", "eShop"],
+  "license": [
+    "MIT"
+  ],
+  "require": {
+    "php": ">=7.1",
+    "oxid-esales/oxideshop-ce": "^v6.1"
+  },
+  "extra": {
+    "oxideshop": {
+      "target-directory": "novikovdvpoit/category-extend"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/novikovdvpoit/oxid-category-extend.git"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Novikovdvpoit\\CategoryExtendModule\\": "../../../source/modules/novikovdvpoit/category-extend"
+    }
+  }
+}
